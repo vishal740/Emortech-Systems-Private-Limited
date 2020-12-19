@@ -87,7 +87,14 @@
     <!--  end container-fluid  -->
 
 
+    <script>
+        document.getElementById('resetButton').addEventListener("click", (abc) => {
+            const input1 = document.getElementById('myinput').value;
+            const input2 = document.getElementById('myinput1').value;
 
+            input1 == input2 ? alert("password reset successfully") : alert("password incorrect");
+        })
+    </script>
 
 
 
