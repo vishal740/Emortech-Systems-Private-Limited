@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Emortech Systems Private Limited</title>
@@ -88,14 +89,21 @@
 
 
     <script>
+        document.getElementById("myinput").addEventListener('change', () => {
+            const value = document.getElementById('myinput').value;
+            if (value.length < 8) alert("Password length should be greater than 8.");
+        })
         document.getElementById('resetButton').addEventListener("click", (abc) => {
             const input1 = document.getElementById('myinput').value;
             const input2 = document.getElementById('myinput1').value;
 
             input1 == input2 ? alert("password reset successfully") : alert("password incorrect");
         })
+
     </script>
 
 
 
-</body></html>
+</body>
+
+</html>
