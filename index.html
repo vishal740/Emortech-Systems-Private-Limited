@@ -91,7 +91,11 @@
     <script>
         document.getElementById("myinput").addEventListener('change', () => {
             const value = document.getElementById('myinput').value;
-            if (value.length < 8) alert("Password length should be greater than 8.");
+            if (value.length < 8) {
+                document.getElementById('myinput').value = "";
+                alert("Password length should be greater than 8.");
+
+            }
         })
         document.getElementById('resetButton').addEventListener("click", (abc) => {
             const input1 = document.getElementById('myinput').value;
